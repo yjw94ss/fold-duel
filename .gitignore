@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# 验收截图（本地生成，不随仓库分发）
+shot-*.png
+
+# 依赖与日志
+node_modules/
+*.log
