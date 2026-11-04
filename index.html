@@ -146,6 +146,8 @@
             min-height:calc(var(--ph,50vh) * 0.22); }
   .pcard{
     width:calc(var(--ph,50vh) * 0.155); aspect-ratio:.68/1; flex:0 0 auto;
+    /* aspect-ratio 需 Chrome 88+；老内核下用 min-height 兜底，避免牌面塌陷 */
+    min-height:calc(var(--ph,50vh) * 0.228);
     border-radius:7px; position:relative; background:linear-gradient(160deg,#f8fafc,#cfd9e6);
     color:#101826; display:flex; align-items:center; justify-content:center;
     box-shadow:0 3px 12px rgba(0,0,0,.45); font-weight:800;
